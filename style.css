@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #c5e4e7;
+  font-family: "Space Mono", monospace;
+  color: #00494d;
+}
+
+#title {
+  text-align: center;
+  margin: 80px auto 60px;
+  letter-spacing: 10px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#myForm {
+  width: 70%;
+  margin: 0px auto 150px;
+  display: flex;
+  background: white;
+  border-radius: 25px;
+  padding: 35px;
+  font-size: 24px;
+}
+
+.card__child {
+  width: 50%;
+  padding: 0px 30px;
+}
+
+#bill, #people {
+  font-size: 22px;
+  padding: 16px;
+  text-align: right;
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  margin: 5px 0px;
+  border: 3px solid #26c0ab;
+  border-radius: 5px;
+}
+
+#tip-flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card__child--right {
+  background: #00494d;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__child--right div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.strong-cyan {
+  color: #26c0ab;
+  font-size: 50px;
+}
+
+.card__child--right input {
+  width: 100%;
+  height: 50px;
+  border-radius: 7px;
+  color: #00494d;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 1px;
+  background: #26c0ab;
+  border: none;
+  outline: none;
+  margin-bottom: 40px;
+}
+
+section p {
+  margin: 0px;
+}
+
+section div {
+  margin: 30px 0px;
+}
+
+.card__child--left p {
+  margin: 0px;
+}
+
+/* The container */
+.container {
+  display: block;
+  height: 40px;
+  position: relative;
+  padding-left: 110px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 10px 0px;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 100px;
+  background-color: #00494d;
+  color: white;
+  border-radius: 5px;
+}
+
+.checkmark p {
+  margin: 0px;
+  padding: 5px 38px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #c5e4e7;
+  color: #00494d;
+}
+
+.container:hover input ~ .checkmark input {
+  background-color: #c5e4e7;
+  color: #00494d;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.container input:checked ~ .checkmark input {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: none;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.checkmark input {
+  background: #f4fafa;
+  opacity: 1;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  border: none;
+  outline: none;
+  padding: 13px;
+  font-size: 20px;
+  text-align: right;
+  font-weight: 600;
+}
+
+.light-gray-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #5e7a7d;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+#custom {
+  opacity: 0;
+  width: 100px;
+  margin-left: -110px;
+}
+
+#custom_input {
+  font-size: 22px;
+  font-weight: 700;
+  color: #00494d;
+  opacity: 1;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  padding: 0px;
+  display: none;
+}
+
+.other p {
+  padding: 3px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  #myForm {
+    width: 100%;
+    margin: 0px auto 0px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 25px 25px 0px 0px;
+    padding: 35px;
+    font-size: 24px;
+  }
+
+  .card__child {
+    width: 100%;
+    padding: 0px 30px;
+  }
+
+  .card__child--left {
+    margin-bottom: 50px;
+    padding: 0px;
+  }
+
+  section p {
+    margin: 0px;
+    font-size: 20px;
+  }
+
+  .strong-cyan {
+    color: #26c0ab;
+    font-size: 34px;
+  }
+
+  #title {
+    text-align: center;
+    margin: 70px auto 50px;
+    letter-spacing: 10px;
+    font-weight: 700;
+    font-size: 24px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
