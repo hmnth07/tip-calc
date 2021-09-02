@@ -1,7 +1,8 @@
 Things to Do.
+Challenges that I faced:
 1. How to add text input on radio buttons.
 2. onclicking area it should be a radio button first, then inside that we should have custom-input text field.
-
+3. 
 
 
 
