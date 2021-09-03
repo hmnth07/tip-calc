@@ -1,6 +1,3 @@
-// var bill = document.getElementById("bill").value;
-// var bill = document.getElementsByClassName("bill")[0].value;
-// let bill = document.getElementsByName('bill')[0].value
 
 function tipBoxClick() {
     document.getElementById('placeHolder').style.display = "block";
