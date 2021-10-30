@@ -30,7 +30,7 @@ body {
 
 #myForm {
     width: 70%;
-    margin: 0px auto 150px;
+    margin: 0px auto 100px;
     display: flex;
     background: white;
     border-radius: 25px;
@@ -45,13 +45,13 @@ body {
 #bill, #people {
   font-size: 22px;
   padding: 16px;
-    text-align: right;
-    width: 100%;
-    height: 50px;
-    font-size: 24px;
-    margin: 5px 0px;
-    border: 3px solid $strong-cyan;
-    border-radius: 5px;
+  text-align: right;
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  margin: 5px 0px;
+  border: 3px solid $strong-cyan;
+  border-radius: 5px;
 }
 #tip-flexbox {
   display: flex;
@@ -98,14 +98,6 @@ section div {
 .card__child--left p{
   margin: 0px;
 }
-
-
-
-
-
-
-
-
 
 /* The container */
     .container {
@@ -188,7 +180,6 @@ section div {
       border-radius: 50%;
       background: white;
     }
-
     .checkmark input {
       background: hsl(189, 41%, 97%);
       opacity: 1;
@@ -217,73 +208,58 @@ section div {
       color: hsl(228, 45%, 44%);
     }
     #custom {
-    opacity: 0;
-    width: 100px;
-    margin-left: -110px;
+      opacity: 0;
+      width: 100px;
+      margin-left: -110px;
     }
     #custom_input {
-
-
       font-size: 22px;
-    font-weight: 700;
-    color: #00494d;
-    opacity: 1;
-    width: 100px;
-    height: 40px;
-    text-align: center;
-    padding: 0px;
+      font-weight: 700;
+      color: #00494d;
+      opacity: 1;
+      width: 100px;
+      height: 40px;
+      text-align: center;
+      padding: 0px;
       display: none;
-
     }
     .other p{
       padding: 3px;
       text-align: center;
     }
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
 
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-  @media only screen and (max-width:600px) {
-        
-    #myForm  {
-        width: 100%;
-        margin: 0px auto 0px;
-        display: flex;
-        flex-direction: column;
-        background: white;
-        border-radius: 25px 25px 0px 0px;
-        padding: 35px;
-        font-size: 24px;
-    }
-    .card__child {
-          width: 100%;
-          padding: 0px 30px;
-    }
-    .card__child--left {
-        margin-bottom: 50px;
-        padding: 0px;
-    }
-    section p {
-        margin: 0px;
-        font-size: 20px;
-    }
-    .strong-cyan {
-        color: #26c0ab;
-        font-size: 34px;
-    }
-    #title {
-      text-align: center;
-      margin: 70px auto 50px;
-      letter-spacing: 10px;
-      font-weight: 700;
-      font-size: 24px;
-    }
-
+@media only screen and (max-width:600px) {    
+  #myForm  {
+    width: 100%;
+    margin: 0px auto 0px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 25px 25px 0px 0px;
+    padding: 35px;
+    font-size: 24px;
+  }    
+  .card__child {
+    width: 100%;
+    padding: 0px 30px;
   }
+  .card__child--left {
+    margin-bottom: 50px;
+    padding: 0px;
+  }
+  section p {
+    margin: 0px;
+    font-size: 20px;
+  }
+  .strong-cyan {
+    color: #26c0ab;
+    font-size: 34px;
+  }
+  #title {
+    text-align: center;
+    margin: 70px auto 50px;
+    letter-spacing: 10px;
+    font-weight: 700;
+    font-size: 24px;
+  }
+}
