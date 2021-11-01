@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
 
-<!--   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
-
   <title>Tip calculator app</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -19,8 +17,9 @@
 
     <form id="myForm" name="myForm" method="POST">
     <div class="card__child card__child--left">
-        <label for="bill">Bill</label><br>
-        <input type="text" inputmode="numeric" id="bill" name="bill" placeholder="0"><br><br>
+        <label for="bill">Bill</label>
+        <p id="bill_error" style="color: red; display: none; float: right;">Can't be zero</p>
+        <input type="text" inputmode="numeric" id="bill" name="bill" placeholder="0" autocomplete="off"><br><br>
         
         <p>Select Tip %</p>
         <div id="tip-flexbox">
@@ -58,15 +57,16 @@
             <input type="radio" checked="checked" name="radio" value="" id="custom">
             <span class="checkmark other" onclick="showTextInput()">
               <p id="placeHolder">Custom</p>
-              <input id="custom_input" type="text" placeholder="Custom" name="other">
+              <input id="custom_input" type="text" placeholder="Custom" name="other" autocomplete="off">
             </span>
           </label>
         </div><br>
         
-        <label for="people">Number of People</label><br>
-        <input type="text" inputmode="numeric" id="people" name="number of people" placeholder="0">
+        <label for="people">Number of People</label>
+        <p id="people_error" style="color: red; display: none; float: right;">Can't be zero</p>
+        <br>
+        <input type="text" inputmode="numeric" id="people" name="number of people" placeholder="0" autocomplete="off">
 
-        <!-- <input type="submit" style="height: 0px; width: 0px; border: none; padding: 0px;" hidefocus="true" /> -->
         <input type="submit">
     </div>
 
