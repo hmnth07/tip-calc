@@ -22,7 +22,7 @@ function validateForm() {
         // alert("select the tip or add custom");
         return false;
     } else if (people == "") {
-        document.getElementById("people_error").style.display = "inline"; 
+        document.getElementById("people_error").style.display = "inline";
         return false;
     }
 }
@@ -60,6 +60,9 @@ myForm.addEventListener("submit", function (event) {
     if (bill == "" || tip =="" || people == "") {
         return;
     }
+    document.getElementById("people_error").style.display = "none";
+    document.getElementById("bill_error").style.display = "none";
+
 
     let total_tip = (bill * (tip / 100));
     let tip_amount_person = total_tip/people;
