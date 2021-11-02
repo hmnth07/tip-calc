@@ -64,9 +64,9 @@ myForm.addEventListener("submit", function (event) {
     document.getElementById("bill_error").style.display = "none";
 
 
-    let total_tip = (bill * (tip / 100));
-    let tip_amount_person = total_tip/people;
-    let total_person = (parseInt(bill) + total_tip) / people;
+    let total_tip = Math.floor(bill * (tip / 100));
+    let tip_amount_person = Math.floor(total_tip/people);
+    let total_person = Math.floor((parseInt(bill) + total_tip) / people);
     
     document.getElementById('tip_amount_person').innerHTML = "$" + tip_amount_person + ".00";
     document.getElementById('total_person').innerHTML = "$" + total_person + ".00";
